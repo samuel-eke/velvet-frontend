@@ -61,6 +61,8 @@ import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 import checked from './checked.png'
 import un_checked from './un_checked.png'
+import velvet_logo from "./icon 1.jpg"
+import velvet_logo2 from "./icon 2.jpg"
 
 export const assets = {
     logo,
@@ -83,7 +85,9 @@ export const assets = {
     bag_icon,
     parcel_icon,
     checked,
-    un_checked
+    un_checked,
+    velvet_logo,
+    velvet_logo2
 }
 
 export const menu_list = [
