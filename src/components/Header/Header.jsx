@@ -5,9 +5,13 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='header-contents'>
-                <h2>Order your favourite food here</h2>
-                <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
+                <div className="header-blur">
+
+                <h2>Stitch Your Story</h2>
+                <h3 style={{fontStyle: "italic"}}>Shop One-of-a-Kind Knits & Crochet Creations</h3>
+                <p>Transform your space and style with our exclusive range of handmade knitting and crochet products. Every piece tells a story, woven with passion and creativity. Whether you’re searching for the perfect gift or a special treat for yourself, find something truly unique in our shop today!</p>
                 <button><a href="#explore-menu">Buy now</a></button>
+                </div>
             </div>
         </div>
     )

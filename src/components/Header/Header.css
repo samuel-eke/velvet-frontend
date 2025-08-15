@@ -1,9 +1,10 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size:contain;
+    background: url('../../assets/head4.jpg') no-repeat;
+    background-size:cover;
     position: relative;
+    border-radius: 8px;
 }
 .header-contents{
     position: absolute;
@@ -18,7 +19,7 @@
 }
 .header-contents h2{
     font-weight:500;
-    color: white;
+    color: #fa216b;
     font-size: max(4.5vw,22px);
 }
 .header-contents p{
@@ -27,13 +28,28 @@
 }
 .header-contents button{
     border: none;
-    color: #747474;
+    color: #ddac42;
     font-weight: 500;
     padding: 1vw 2.3vw;
     background: white;
-    font-size: max(1vw,13px);
+    font-size: max(1vw,23px);
     border-radius: 50px;
 }
+
+    .header-blur {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        /* Optional: add some padding for better look */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
 @media (max-width:1050px) {
     .header{
         height: 38vw;

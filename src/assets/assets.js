@@ -2,14 +2,15 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
+import menu_1 from './scarf.jpg'
+import menu_2 from './sweater.jpg'
+import menu_3 from './beanie.jpg'
+import menu_4 from './shawl.jpg'
+import menu_5 from './dress.jpg'
+import menu_6 from './bows.jpg'
+import menu_7 from './bikini.jpg'
+import menu_8 from './skirts.jpg'
+import menu_9 from './accessory.jpg'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -92,37 +93,43 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Scarves",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Sweaters",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Beanies & Hats",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Shawls & Wraps",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Woolen Dresses",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Hair Bow",
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "Bikini",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Skirts & Vests",
         menu_image: menu_8
-    }]
+    },
+    {
+        menu_name: "Accessories",
+        menu_image: menu_9
+    },
+    
+    ]
 
 export const food_list = [
     {
