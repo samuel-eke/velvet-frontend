@@ -2,6 +2,7 @@
   "name": "food-del",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://www.myvelvetloop.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
