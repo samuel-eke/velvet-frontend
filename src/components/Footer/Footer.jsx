@@ -16,24 +16,24 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer-content-center">
-            <h2>COMPANY</h2>
+            <h2>Velvet Loop</h2>
             <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Delivery</li>
-                <li>Privacy policy</li>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Privacy policy</a></li>
             </ul>
         </div>
         <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>+1-212-456-7890</li>
-                <li>contact@tomato.com</li>
+                <li>me@gmail.com</li>
             </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 © Tomato.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2025 © myvelvetloop.com - All Right Reserved.</p>
     </div>
   )
 }

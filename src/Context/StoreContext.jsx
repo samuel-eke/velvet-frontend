@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
-    const url = " https://velvet-loops-backend.onrender.com"
+    const url = "https://velvet-loops-backend.onrender.com"
     const [food_list, setFoodList] = useState([]);
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("")
@@ -50,6 +50,7 @@ const StoreContextProvider = (props) => {
     const fetchFoodList = async () => {
         const response = await axios.get(url + "/api/food/list");
         setFoodList(response.data.data)
+        console.log(response.data)
     }
 
     const loadCartData = async (token) => {

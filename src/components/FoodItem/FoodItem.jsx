@@ -7,14 +7,17 @@ const FoodItem = ({ image, name, price, desc, id }) => {
 	const [itemCount, setItemCount] = useState(0);
 	const { cartItems, addToCart, removeFromCart, url, currency } =
 		useContext(StoreContext);
+		console.log(image);
+		console.log(`the url ${url}`)
 
 	return (
 		<div className="food-item">
 			<div className="food-item-img-container">
 				<img
 					className="food-item-image"
-					src={url + "/images/" + image}
-					alt=""
+					src={url + "/images/"+ image}
+					// src={image}
+					alt="image"
 				/>
 				{!cartItems[id] ? (
 					<img
