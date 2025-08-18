@@ -1,71 +1,173 @@
-.header{
-    height: 34vw;
-    margin: 30px auto;
-    background: url('../../assets/head4.jpg') no-repeat;
-    background-size:cover;
-    position: relative;
-    border-radius: 8px;
+.header {
+	height: 34vw;
+	margin: 30px auto;
+	background: url("../../assets/head4.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	border-radius: 8px;
 }
-.header-contents{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
-    animation: fadeIn 3s;
+.header-contents {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1.5vw;
+	max-width: 50%;
+	bottom: 10%;
+	left: 6vw;
+	animation: fadeIn 3s;
 }
-.header-contents h2{
-    font-weight:500;
-    color: #fa216b;
-    font-size: max(4.5vw,22px);
+.header-contents h2 {
+	font-weight: 500;
+	color: #fa216b;
+	font-size: max(4.5vw, 22px);
 }
-.header-contents p{
-    color: white;
-    font-size: 1vw;
+.header-contents p {
+	color: white;
+	font-size: 1vw;
 }
-.header-contents button{
-    border: none;
-    color: #ddac42;
-    font-weight: 500;
-    padding: 1vw 2.3vw;
-    background: white;
-    font-size: max(1vw,23px);
-    border-radius: 50px;
+.header-contents button {
+	border: none;
+	color: #ddac42;
+	font-weight: 500;
+	padding: 1vw 2.3vw;
+	background: white;
+	font-size: max(1vw, 23px);
+	border-radius: 50px;
 }
 
-    .header-blur {
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 16px;
-        box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        /* Optional: add some padding for better look */
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-@media (max-width:1050px) {
-    .header{
-        height: 38vw;
-    }
-    .header-contents{
-        max-width: 45%;
-    }
+.header-blur {
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 16px;
+	box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	/* Optional: add some padding for better look */
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
-@media(max-width:750px){
-    .header-contents{
-        max-width: 55%;
-    }
-    .header-contents p{
-       display: none;
-    }
-    .header-contents button{
-        padding: 2vw 4vw;
-    }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+	.header {
+		height: 40vw;
+	}
+	.header-contents {
+		max-width: 60%;
+		bottom: 10%;
+		gap: 1.2vw;
+	}
+	.header-contents h2 {
+		font-size: 3vw;
+	}
+	.header-contents h3 {
+		font-size: 2vw;
+	}
+	.header-contents p {
+		font-size: 1.2vw;
+		line-height: 1.6;
+	}
+	.header-contents button {
+		padding: 1vw 2.5vw;
+		font-size: 1.5vw;
+	}
+	.header-blur {
+		padding: 1.8rem;
+		gap: 1.2rem;
+	}
+}
+@media (max-width: 768px) {
+	.header {
+		height: 50vw;
+	}
+	.header-contents {
+		max-width: 70%;
+		bottom: 8%;
+	}
+	.header-contents h2 {
+		font-size: 3.5vw;
+	}
+	.header-contents h3 {
+		font-size: 2.5vw;
+	}
+	.header-contents p {
+		font-size: 1.5vw;
+	}
+	.header-contents button {
+		padding: 1.5vw 3vw;
+		font-size: 1.8vw;
+	}
+}
+
+@media (max-width: 436px) {
+	.header {
+		height: 60vw;
+	}
+	.header-contents {
+		max-width: 85%;
+		bottom: 5%;
+		gap: 2vw;
+	}
+	.header-contents h2 {
+		font-size: 5vw;
+	}
+	.header-contents h3 {
+		font-size: 3.5vw;
+	}
+	.header-contents p {
+		display: none;
+	}
+	.header-contents button {
+		padding: 2vw 4vw;
+		font-size: 2.5vw;
+	}
+}
+
+@media (max-width: 375px) {
+	.header {
+		height: 70vw;
+	}
+	.header-contents {
+		max-width: 90%;
+		bottom: 5%;
+	}
+	.header-contents h2 {
+		font-size: 6vw;
+	}
+	.header-contents h3 {
+		font-size: 4vw;
+	}
+	.header-blur {
+		padding: 1.5rem;
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.header {
+		height: 80vw;
+		margin: 15px auto;
+	}
+	.header-contents {
+		max-width: 95%;
+		left: 3vw;
+		bottom: 3%;
+	}
+	.header-contents h2 {
+		font-size: 7vw;
+	}
+	.header-contents h3 {
+		font-size: 4.5vw;
+	}
+	.header-contents button {
+		padding: 2.5vw 5vw;
+		font-size: 3vw;
+	}
+	.header-blur {
+		padding: 1rem;
+		gap: 0.8rem;
+	}
 }
